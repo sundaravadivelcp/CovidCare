@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/record_video_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/upload_symptoms_button"
+            app:layout_constraintTop_toBottomOf="@+id/frame_layout"/>
+    <Button
+            android:id="@+id/upload_symptoms_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_symptoms_button"
+            app:layout_constraintBaseline_toBaselineOf="@+id/upload_signs_button"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:id="@+id/measure_breath_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/measure_breathing"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="48dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/view_database_button"
+            app:layout_constraintHorizontal_bias="0.497"/>
+    <Button
+            android:id="@+id/upload_signs_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_signs"
+            android:layout_marginBottom="36dp" app:layout_constraintEnd_toEndOf="@+id/heart_rate_text_view"
+            app:layout_constraintBottom_toTopOf="@+id/heart_rate_text_view" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="47dp" android:layout_marginEnd="50dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:id="@+id/measure_heartrate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/measure_pulse"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/measure_breath_button"
+            app:layout_constraintBottom_toTopOf="@+id/breath_rate_text_view"/>
+    <TextView
+            android:id="@+id/heart_rate_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/measure_heartrate_button"/>
+    <TextView
+            android:id="@+id/breath_rate_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            app:layout_constraintStart_toStartOf="@+id/measure_breath_button" android:layout_marginBottom="21dp"
+            app:layout_constraintEnd_toEndOf="@+id/measure_breath_button"
+            app:layout_constraintBottom_toTopOf="@+id/measure_breath_button"/>
+    <Button
+            android:text="View Database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/view_database_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="28dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.498"/>
+    <FrameLayout
+            android:layout_width="139dp"
+            android:layout_height="187dp"
+            android:background="@android:color/black"
+            app:layout_constraintDimensionRatio="H,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="56dp"
+            android:id="@+id/frame_layout"
+    >
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
