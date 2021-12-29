@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginTop="30dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginBottom="30dp">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C303D3ED">
+
+
+        <TextView
+                android:id="@+id/heart_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text= "Heart Rate"/>
+
+        <TextView
+                android:id="@+id/breathing_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_toEndOf="@id/heart_rate"
+                android:text="Respiratory Rate" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C1F6F358">
+
+        <TextView
+                android:id="@+id/fever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Fever" />
+        <TextView
+                android:id="@+id/cough"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/fever"
+                android:text="Cough" />
+
+        <TextView
+                android:id="@+id/tiredness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/cough"
+                android:text="Tiredness" />
+
+        <TextView
+                android:id="@+id/short_of_breath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/tiredness"
+                android:text="Short of Breath" />
+
+        <TextView
+                android:id="@+id/muscle_ache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/short_of_breath"
+                android:text="Muscle Ache" />
+
+
+        <TextView
+                android:id="@+id/chills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/muscle_ache"
+                android:text="Chills" />
+
+        <TextView
+                android:id="@+id/sore_throat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/chills"
+                android:text="Sore Throat" />
+
+
+
+        <TextView
+                android:id="@+id/runny_nose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/sore_throat"
+                android:text="Runny Nose" />
+
+
+
+        <TextView
+                android:id="@+id/headache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/runny_nose"
+                android:text="Headache" />
+
+        <TextView
+                android:id="@+id/chest_pain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@id/headache"
+                android:text="Chest Pain" />
+
+    </RelativeLayout>
+</LinearLayout>

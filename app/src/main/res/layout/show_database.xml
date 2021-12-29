@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+              tools:context=".UserData"
+              android:layout_marginTop="30dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#03D3ED"
+            android:textAlignment="center"
+            android:id="@+id/relativeLayout2" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="10dp">
+
+        <TextView
+                android:id="@+id/value1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Heart Rate"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/Value2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/value1"
+                android:layout_marginLeft="50dp"
+                android:text="Respiratory Rate"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F358"
+            android:textAlignment="center" android:id="@+id/relativeLayout"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="10dp">
+
+        <TextView
+                android:id="@+id/value2"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Fever"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/value3"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/value2"
+                android:text="Cough"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/value4"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/value3"
+                android:text="Tiredness"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/value5"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/value4"
+                android:text="Short of Breath"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/value6"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/value5"
+                android:text="Muscle Ache"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/value7"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/value6"
+                android:text="Chills"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/value8"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/value7"
+                android:text="Sore Throat"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/value9"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/value8"
+                android:text="Runny Nose"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+
+        <TextView
+                android:id="@+id/value10"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/value9"
+                android:text="Headache"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/value11"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/value10"
+                android:text="Chest Pain"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
